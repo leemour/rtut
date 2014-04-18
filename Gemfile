@@ -4,9 +4,22 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.0.4'
 
+group :development do
+  # gem 'irbtools'
+  gem 'pry-rails'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem "quiet_assets"
+end
+
 group :development, :test do
   gem 'sqlite3', '1.3.8'
   gem 'rspec-rails', '2.13.1'
+
+  gem 'byebug'
+  gem 'guard-rspec'
+  gem 'guard-livereload'
+  gem 'rack-livereload'
 end
 
 group :test do
